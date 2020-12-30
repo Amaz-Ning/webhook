@@ -6,9 +6,9 @@ const handler = createHandler({
 })
 http.createServer((req, res) => {
     console.log('已经接收到请求')
-    handler((req, res, err) => {
-        console.log('已经接收到webhook')
-    })
+    // handler((req, res, err) => {
+    //     console.log('已经接收到webhook')
+    // })
 }).listen(8888, () => {
     console.log('8888端口已启动')
 })
