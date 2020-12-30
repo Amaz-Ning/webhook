@@ -5,8 +5,9 @@ const handler = createHandler({
     secret: 'helloworld'
 })
 http.createServer((req, res) => {
-    
+
     console.log('已经接收到请求')
+    res.end('12313')
     // handler((req, res, err) => {
     //     console.log('已经接收到webhook')
     // })
