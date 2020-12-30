@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Amaz-Ning/webhook#readme",
   "dependencies": {
+    "child_process": "^1.0.2",
     "github-webhook-handler": "^1.0.0"
   }
 }
