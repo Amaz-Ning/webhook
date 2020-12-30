@@ -6,6 +6,7 @@ const handler = createHandler({
 })
 http.createServer((req, res) => {
     handler(req, res, (err) => {
+        
         res.statusCode = 404
         res.end('no such location')
     })
