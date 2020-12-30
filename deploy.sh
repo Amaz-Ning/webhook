@@ -1,2 +1,2 @@
-ls
 git pull
+ls
