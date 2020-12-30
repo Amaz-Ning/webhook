@@ -30,6 +30,7 @@ handler.on('push', () => {
     console.log('已监听到push事件')
     console.log('hahahahahha')
     run_process('sh', ['./deploy.sh'], (text) => {
+        console.log(text);
         console.log('阿拉啦啦啦啦啦啦啦啦啦啦')
     })
 })
