@@ -13,6 +13,7 @@ const run_process = (cmd, args, callback) => {
     })
     child.stdout.on('end', () => {
         callback(resp)
+        
     })
 }
 http.createServer((req, res) => {
