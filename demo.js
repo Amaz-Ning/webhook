@@ -5,11 +5,10 @@ const handler = createHandler({
     secret: 'helloworld'
 })
 http.createServer((req, res) => {
-    console.log('已经接收到请求')
-    res.end('12313')
-    // handler((req, res, err) => {
-    //     console.log('已经接收到webhook')
-    // })
+    handler(req, res, (err) => {
+        res.statusCode = 404
+        res.end('no such location')
+    })
 }).listen(8888, () => {
     console.log('8888端口已启动')
 })
