@@ -12,6 +12,7 @@ const run_process = (cmd, args, callback) => {
     child.stdout.on('data', (buffer) => {
         resp += buffer.toString();
     })
+    
     child.stdout.on('end', () => {
         callback(resp)
     })
