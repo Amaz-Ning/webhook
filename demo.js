@@ -24,7 +24,7 @@ http.createServer((req, res) => {
     console.log('8888端口已启动')
 })
 handler.on('push', () => {
-    console.log('已监听到push事件')
+    console.log('已监听到push事件 ahhahahhahah')
     run_process('sh', ['./deploy.sh'], (text) => {
         console.log(text);
     })
