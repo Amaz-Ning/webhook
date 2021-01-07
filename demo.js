@@ -20,7 +20,6 @@ http.createServer((req, res) => {
         res.statusCode = 404
         res.end('no such location')
     })
-    console.log('helloworld');
 }).listen(8888, () => {
     console.log('8888端口已启动')
 })
