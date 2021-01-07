@@ -25,7 +25,7 @@ http.createServer((req, res) => {
 })
 handler.on('push', () => {
     console.log('已监听到push事件 ahhahahhahah')
-    run_process('sh', ['./deploy.sh'], (text) => {
+    run_process('sh', ['./deploy'], (text) => {
         console.log(text);
     })
 })
