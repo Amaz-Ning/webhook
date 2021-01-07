@@ -18,7 +18,7 @@ const run_process = (cmd, args, callback) => {
 http.createServer((req, res) => {
     handler(req, res, (err) => {
         res.statusCode = 404
-        res.end('no such location')
+        res.end('你好呀，这里是amaz用来监听webhook的地址！')
     })
 }).listen(8888, () => {
     console.log('8888端口已启动')
