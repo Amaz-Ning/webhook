@@ -1,5 +1,5 @@
 ls
-cd serviceCode
+cd ../serviceCode
 git pull
 npm install
 npm run build
